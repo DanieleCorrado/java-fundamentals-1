@@ -1,4 +1,4 @@
-package org.lessons.java.org.security;
+package org.lessons.java.security;
 
 import java.util.Scanner;
 
@@ -26,6 +26,7 @@ public class PasswordGenerator {
         String favoriteColor = scanner.nextLine();
         System.out.print("Enter your day of birth (gg/mm/YY): ");
         String birthDate = scanner.nextLine();
+
         String[] spliceString = birthDate.split("/");
 
         int sumdate = Integer.parseInt(spliceString[0]) + Integer.parseInt(spliceString[1]) + Integer.parseInt(spliceString[2]);

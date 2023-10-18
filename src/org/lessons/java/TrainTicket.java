@@ -15,6 +15,9 @@ public class TrainTicket {
         Scanner scanner = new Scanner(System.in);
 
         double pricePerKm = 0.21;
+        int juniorDiscount = 20;
+        int seniorDiscount = 40;
+
 
         System.out.print("How many km do you have to travel? ");
         double km = scanner.nextDouble();
@@ -24,10 +27,10 @@ public class TrainTicket {
         double price = pricePerKm * km;
 
         if(age < 18) {
-            double discount = (price * 20) / 100;
+            double discount = (price * juniorDiscount) / 100;
             price = price - discount;
         } else if (age > 65) {
-            double discount = (price * 40) / 100;
+            double discount = (price * seniorDiscount) / 100;
             price = price - discount;
         }
 

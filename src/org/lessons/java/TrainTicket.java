@@ -31,7 +31,7 @@ public class TrainTicket {
             price = price - discount;
         }
 
-        System.out.println("The ticket price is " + price);
+        System.out.println("The ticket price is " + price + " €");
 
 
         // Chiusura scanner

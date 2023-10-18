@@ -34,7 +34,7 @@ public class FerragnezBonus {
 
 
         while (i < invited.length) {
-            if (invited[i].equals(userName)) {
+            if (invited[i].equalsIgnoreCase(userName)) {
                 isInvited = true;
                 break;
             }

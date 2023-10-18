@@ -34,7 +34,7 @@ public class Ferragnez {
         String userName = scanner.nextLine();
 
         for (int i = 0; i < invited.length; i++) {
-            if (invited[i].equals(userName)) {
+            if (invited[i].equalsIgnoreCase(userName)) {
                 isInvited = true;
                 break;
             }
